@@ -1,0 +1,34 @@
+/* Custom Tailwind components */
+@layer components {
+    .btn-primary {
+        @apply bg-indigo-600 border border-transparent py-3 px-8 rounded-md font-medium text-white hover:bg-indigo-700 transition duration-300;
+    }
+    
+    .product-card {
+        @apply group relative transition duration-300 transform hover:scale-105;
+    }
+    
+    .product-image {
+        @apply w-full min-h-80 bg-gray-200 aspect-w-1 aspect-h-1 rounded-md overflow-hidden group-hover:opacity-75;
+    }
+}
+
+/* Hero section animation */
+.hero-slide {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 640px) {
+    .mobile-menu {
+        display: block;
+    }
+    .desktop-menu {
+        display: none;
+    }
+}
